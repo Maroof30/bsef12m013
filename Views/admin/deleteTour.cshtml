@@ -1,0 +1,15 @@
+﻿@{
+    ViewBag.Title = "deleteTour";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+<h1 style="color:red">DELETE</h1>
+ @using(Html.BeginForm("delete", "Tours", FormMethod.Post, new {enctype = "multipart/form-data"}))
+ {
+
+<label>Enter ID : </label> <input type="text" name ="id"  required="required"/>
+     <br />
+   
+<input type ="submit" value ="DELETE" class ="btn btn-danger" />
+
+}

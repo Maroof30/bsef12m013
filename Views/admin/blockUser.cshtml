@@ -1,0 +1,14 @@
+﻿@{
+    ViewBag.Title = "blockUser";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+ @using(Html.BeginForm("delete", "tour", FormMethod.Post, new {enctype = "multipart/form-data"}))
+ {
+<label>User Name : </label> <input type="text" name ="username" required="required" />
+     <br />
+    
+<input type ="submit" value ="DELETE" class ="btn btn-danger" />
+
+}

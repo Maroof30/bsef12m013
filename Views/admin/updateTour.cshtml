@@ -1,0 +1,17 @@
+﻿@{
+    ViewBag.Title = "updateTour";
+         Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+
+
+<h2>updateTour</h2>
+
+
+ @using(Html.BeginForm("updateTour", "Tours", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+     
+<label> ID: </label> <input type="text" name="id" />
+<label> Heading : </label> <input type ="text" name ="head" />
+<label> Description : </label> <input type="text" name="desc"/>
+    <input type ="submit" value ="Update" class ="btn btn-primary" />
+  }

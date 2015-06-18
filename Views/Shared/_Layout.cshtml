@@ -1,0 +1,422 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    
+<head>
+    <title>Cheetah</title>
+        <script src="../jquery-1.11.3.min.js"></script>
+    <script src="../bootstrap.min.js"></script>
+    <script src="../jquery.js"></script>
+    <link href="../thumbnail-gallery.css" rel="stylesheet" />
+    <link href="../bootstrap.css" rel="stylesheet"/>
+    <script src="../bootstrap.js"></script>
+    <link rel="stylesheet" href="../normalize.css"/>
+	<link rel="stylesheet" href="../style.css"/>
+	<link href='http://fonts.googleapis.com/css?family=PT+Sans:400,700' rel='stylesheet' type='text/css'/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"/>
+<link href="../css/site.css" rel="stylesheet" type="text/css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../script/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+    <script src="../Scripts/jquery.validate.min.js"></script>
+    <script src="../Scripts/jquery.validate.unobtrusive.min.js"></script>
+
+
+
+    <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap.min.css"/>
+<link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.0/css/bootstrap-theme.min.css"/>
+<link href="../css1/site.css" rel="stylesheet" type="text/css" />
+<link href="http://www.jqueryscript.net/css/jquerysctipttop.css" rel="stylesheet" type="text/css"/>
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+<script src="../script/jquery.bootstrap.newsbox.min.js" type="text/javascript"></script>
+
+
+
+    <style>
+
+
+
+        ul.navbar-nav a:hover, ul.navbar-nav li a:active{
+        background-color: orange;
+    
+}
+      
+        .navbar.navbar-default {
+            width:68vw;
+            position:fixed;
+            z-index:1000;
+           background-color:brown;
+           background-image:url('../nav.jpg');
+           height:4vw;
+           border-color:transparent;
+     
+        position:absolute;
+
+        }
+     
+      
+     
+
+
+
+        .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus, .navbar-default .navbar-nav > li > a:active {
+    background-color:orange;
+    
+    
+    border-color:transparent;
+}
+
+
+       .nav.nav-center {
+    margin:0;
+       border-color:transparent;
+    float:none;
+}
+
+.nav.navbar-nav{
+    text-align:center;
+       
+}
+
+       
+
+
+
+.modalDialog {
+		position: fixed;
+		font-family: Arial, Helvetica, sans-serif;
+		top: 0;
+		right: 0;
+		bottom: 0;
+		left: 0;
+		background: rgba(0,0,0,0.8);
+		z-index: 99999;
+		opacity:0;
+		-webkit-transition: opacity 400ms ease-in;
+		-moz-transition: opacity 400ms ease-in;
+		transition: opacity 400ms ease-in;
+		pointer-events: none;
+	}
+
+	.modalDialog:target {
+		opacity:1;
+		pointer-events:all;
+	}
+
+	.modalDialog > div {
+		width: 400px;
+		position: relative;
+		margin: 10% auto;
+		padding: 5px 20px 13px 20px;
+		border-radius: 10px;
+		background: #fff;
+		background: -moz-linear-gradient(#fff, #999);
+		background: -webkit-linear-gradient(#fff, #999);
+		background: -o-linear-gradient(#fff, #999);
+	}
+
+	.close {
+		background: #606061;
+		color: #FFFFFF;
+		line-height: 25px;
+		position: absolute;
+		right: 0px;
+		text-align: center;
+		top: 0px;
+		width: 24px;
+		text-decoration: none;
+		font-weight: bold;
+		-webkit-border-radius: 12px;
+		-moz-border-radius: 12px;
+		border-radius: 12px;
+		-moz-box-shadow: 1px 1px 3px #000;
+		-webkit-box-shadow: 1px 1px 3px #000;
+		box-shadow: 1px 1px 3px #000;
+	}
+
+	.close:hover { background: #00d9ff; }
+        
+    </style>
+   
+    <script>
+
+        $(function () {
+            var pull = $('#pull');
+            menu = $('nav ul');
+            menuHeight = menu.height();
+
+            $(pull).on('click', function (e) {
+                e.preventDefault();
+                menu.slideToggle();
+            });
+
+            $(window).resize(function () {
+                var w = $(window).width();
+                if (w > 320 && menu.is(':hidden')) {
+                    menu.removeAttr('style');
+                }
+            });
+        });
+
+
+
+
+
+
+
+
+
+      
+
+    </script>
+
+
+  
+
+	<!-- Start WOWSlider.com HEAD section --> <!-- add to the <head> of your page -->
+	<link rel="stylesheet" type="text/css" href="../engine0/style.css" />
+	<!--script type="text/javascript" src="engine0/jquery.js"></script-->
+	<!-- End WOWSlider.com HEAD section -->
+
+
+
+
+</head>
+
+   
+<body style="background-image:url('../kkk.jpg')">
+  
+    <div class="container-fluid">
+
+        <form action ="/tour/login" method ="post">
+            <div id="openModal" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2 style ="font-size:2vw; color:blue">Login/Signup</h2>
+        <br />
+        <a class="btn btn-primary" role="button" href="#signup">Signup</a>
+		 <h3 style ="font-size:1vw"> Username:@*<input type="text" placeholder="Username" name="username" />*@ @Html.TextAreaFor(m => m.tourists.username, new { placeholder="Username", type="text"}) @Html.ValidationMessageFor(model=> model.tourists.username)</h3>
+        <h3 style ="font-size:1vw"> Password:@*<input type="password" placeholder="Password" name="password" />*@ @Html.PasswordFor(model=>model.tourists.password, new { style ="font-size:1vw", @placeholder="password" }) @Html.ValidationMessageFor(model=> model.tourists.password)</h3>
+        <input type="checkbox"  id="c1" style="width:1.2vw;height:1.2vw;font-size:1vw" />Forgot Your Password? <br /><br /><br />
+        <input type="submit" value="Login" style="width:10vw;height:2vw"/>
+
+	</div>
+</div>
+            </form>
+
+
+
+
+
+          <form action ="/tour/cancel" method ="post">
+            <div id="cancel" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2 style ="font-size:2vw; color:red">Cancel Tour</h2>
+        <br />
+        
+		 <h3 style ="font-size:1vw"> Tour Name:<input type="text" placeholder="tour name" name="tourname" /> @Html.ValidationMessageFor(model=> model.tours.location) </h3>
+        
+        <input type="submit" value="CANCEL" style="width:10vw;height:2vw" class="btn btn-danger"/>
+
+	</div>
+</div>
+            </form>
+
+
+
+
+
+
+
+      
+        @model MvcApplication2.Models.modelview_classes.myModel
+
+
+        
+             @using(Html.BeginForm("addTourist", "tour", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+          <div id="signup" class="modalDialog">
+	<div>
+		<a href="#close" title="Close" class="close">X</a>
+		<h2 style ="font-size:1.5vw; color:blue">Signup</h2>
+        <br />
+    
+		 <h3 style ="font-size:1vw"> Username:@Html.TextBoxFor(model => model.tourists.username, new { style ="font-size:1vw", @placeholder="username",id="UserName" }) @Html.ValidationMessageFor(model=> model.tourists.username)</h3>
+
+         <input type="button" id="b1" value="Check"/>
+       
+      <label id ="l1" style="color:red"></label>
+        <label id ="l2" style="color:green"></label>
+       @Scripts.Render("~/bundles/jquery")
+        <script>
+
+            $(document).ready(function () {
+
+
+
+                $('#b1').click(function () {
+
+                    var userName = $('#UserName').val();
+
+                    //   alert('User Name ='+ userName);
+
+                    $.getJSON("/tour/checkUserName?uname=" + userName, function (data) {
+
+                        if (data) {
+
+                            $('#l1').text("User already exists in database");
+                            $('#l2').text("");
+
+                        }
+                        else {
+                            $('#l2').text("User Name is available");
+                            $('#l1').text("");
+                        }
+                    });
+
+                });
+
+            });
+    </script>
+
+
+
+
+
+        <h3 style ="font-size:1vw"> Password: @Html.PasswordFor(model=>model.tourists.password, new { style ="font-size:1vw", @placeholder="username" }) @Html.ValidationMessageFor(model=> model.tourists.password)</h3>
+        	 <h3 style ="font-size:1vw"> First Name:@Html.TextBoxFor(model => model.tourists.fname, new { style ="font-size:1vw", @placeholder="First Name" }) @Html.ValidationMessageFor(model=> model.tourists.fname)</h3>
+        	 <h3 style ="font-size:1vw"> Last Name:@Html.TextBoxFor(model => model.tourists.lname, new { style ="font-size:1vw", @placeholder="Last Name" }) @Html.ValidationMessageFor(model=> model.tourists.lname)</h3>
+        	 <h3 style ="font-size:1vw"> Cnic: &nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp @Html.TextBoxFor(model => model.tourists.cnic, new { style ="font-size:1vw", @placeholder="Cnic" }) @Html.ValidationMessageFor(model=> model.tourists.cnic)</h3>
+        	 <h3 style ="font-size:1vw"> Contact:@Html.TextBoxFor(model => model.tourists.contact, new { style ="font-size:1vw", @placeholder="Contact" }) @Html.ValidationMessageFor(model=> model.tourists.contact)</h3>
+        	  @Html.HiddenFor(model => model.tourists.status, new { @Value = "active" })
+     <h3 style ="font-size:1vw"> Gender: @Html.RadioButtonFor(model =>model.tourists.gender,"Male") Male
+       @Html.RadioButtonFor(model =>model.tourists.gender,"Female") Female
+        <br />  
+         </h3>
+        <input type="submit"  class="btn btn-primary" value="SignUp" style="width:10vw;height:2vw"/>
+
+	</div>
+</div>
+         }
+
+
+
+
+
+
+   
+        
+             <div class="row">
+    <div class="col-md-8">.</div>
+  <div class="col-md-4">. </div>
+       
+       
+</div>
+<div class="row">
+  <div class="col-md-8"> .</div>
+  <div class="col-md-4">. </div>
+</div>
+       
+        
+
+
+
+    <div class="row">
+  <div class="col-md-8"> .</div>
+  <div class="col-md-4">. </div>
+</div>
+
+
+
+<div class="row">
+
+
+  <div class="col-md-2"> ,</div>
+  <div class="col-md-9"> 
+      <div class="jumbotron" style="background-image:url('../jeep3.jpg');height:auto;background-repeat:no-repeat">
+
+          <p style="font-style:italic;color:white;font-size:3vw;margin-top:8vw;font-family:Impact">UNLEASH YOUR</p> 
+              <p style="font-style:italic;color:white;font-size:3vw;font-family:Impact">SPIRIT ADVENTURE</p> 
+        <a href="../../Tours/tours" class="btn btn-success" role="button" style="margin-left :1.3vw;width:12vw;height:3.5vw;font-style:italic;font-weight:bold;font-size:1.1vw">RESERVE NOW</a>
+      
+
+          
+  
+
+                
+     
+         
+         
+         
+             </div>
+      </div>
+        
+
+
+
+     
+     <div class="col-md-1">. </div>
+
+   
+  </div>
+ 
+
+
+        <div class ="row" >
+            <div class ="col-md-2">,</div>
+            <div class="col-md-9" style="margin-top:-1.5vw">
+                <nav class="clearfix" style ="background-image:url('../cap.jpg'); border-color:transparent">
+		<ul class="clearfix" style ="border-right-color:orange">
+			<li style ="border-right-color:orange"><a href="../../tour/Index">Home</a></li>
+			<li><a href="../../Tours/tours">Tour&Prices</a></li>
+			<li><a href="../../tour/about">About Us</a></li>
+			<li><a href="../../tour/gallery">Gallery</a></li>
+			@if (Session["clientId"] == null)
+   {
+			<li><a href="#openModal">SignUp/Login</a></li>	
+   }
+   else
+   {
+            <li><a href="/tour/signout">Sign Out</a></li>
+       <li><a href="#cancel">Cancel tour</a></li>
+   }
+		</ul>
+		<a href="#" id="pull">Menu</a>
+	</nav>
+
+
+            </div>
+
+            <div class="col-md-1">.</div>
+            <br />
+
+        </div>
+
+
+
+
+
+
+ 
+  
+   
+          @RenderBody()
+
+             <div class="row">
+        <div class="col-md-12">
+         <nav class="navbar " style=" background-image:url('../footer.jpg'); position:absolute; height:200px; width:100%;border:0px;margin-left:-2vw">
+  <div class="container">
+   
+  </div>
+</nav>
+    </div>
+        </div>
+
+
+</div>
+    
+</body>
+</html>

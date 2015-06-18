@@ -1,0 +1,77 @@
+﻿@{
+    ViewBag.Title = "book";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@model MvcApplication2.Models.tour
+<br />
+<br />
+<div class="row">
+    @using(Html.BeginForm("book2", "Booking", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+   
+    <div class="col-lg-2"></div>
+    <div class="col-lg-6" style="background-image:url(../cap.jpg);border-radius:1vw">
+        <br />
+        <h1 style="color:white;font-family:Calibri;font-weight:bold; color:orange;font-style:oblique ">Booking Panel</h1> <br /> <br />
+        <table>
+            <tr>
+
+                <td>@Html.Label("No of Group Members:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp &nbsp&nbsp&nbsp</td>
+                <td>&nbsp<input type="number" style="border-radius:0.3vw" name="member"/></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>@Html.Label("Vehicle:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp  </td>
+                <td>&nbsp <select style="border-radius:0.3vw" name="vehicle"><option value="Jeep"> Jeep 4x4</option> <option value="Coaster"> Coaster</option> <option value="APV"> APV</option> <option value="Bus"> Bus</option> <option value="R-V"> R-V</option></select></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>@Html.Label("No of Binoculars:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+                <td>&nbsp<input type="number"style="border-radius:0.3vw" name="bino_num" /></td>
+            </tr>
+            <tr></tr>
+            <tr></tr>
+            <tr>
+                <td>@Html.Label("Type of Binoculars:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+                <td>&nbsp <select style="border-radius:0.3vw" name="bino"><option value="EDG"> EDG</option> <option value="Monarch"> Monarch</option>  <option value="ProStaff">ProStaff</option> <option value="Standard"> Standard</option></select></td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr>
+
+                <td>@Html.Label("No of Diggers:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+                <td>&nbsp<input type="number" style="border-radius:0.3vw" name="digger"/></td>
+            </tr>
+            <tr></tr><tr></tr>
+            <tr><td><p>.</p></td>
+            <tr>
+              
+                <td>@Html.Label("Tour Date:",new {style="color:white;font-family:Calibri;font-style:italic;font-size:17px" })&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp&nbsp </td>
+                <td>&nbsp <input type="date" style="border-radius:0.3vw" name="date"/></td>
+            </tr>
+            <tr><td><p>.</p></td></tr><tr><td><p>.</p></td></tr>
+            <tr></tr><tr></tr><tr></tr>
+           
+        </table>
+           
+         <input type ="submit" value ="Book" />
+
+        </div>
+    }
+        
+        
+        
+         
+         
+        
+
+        
+
+    
+    <div class ="col-md-3">
+        <img src="../shoes.jpg" class="img-responsive"/>
+    </div>
+
+</div>

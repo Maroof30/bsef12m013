@@ -1,0 +1,19 @@
+﻿@{
+    ViewBag.Title = "addTour";
+     Layout = "~/Views/Shared/_AdminLayout.cshtml";
+}
+}
+
+     @model MvcApplication2.Models.modelview_classes.myModel
+
+ @using(Html.BeginForm("add", "Tours", FormMethod.Post, new {enctype = "multipart/form-data"}))
+    {
+@Html.Label("Tour HeadLine :")  @Html.TextBoxFor(model => model.tours.head, new { @placeholder="Heading" })
+    @Html.Label("Tour Description :")@Html.TextBoxFor(model => model.tours.desc, new { @placeholder="Description" })
+    @Html.Label("Tour Location :") @Html.TextBoxFor(model => model.tours.location, new { @placeholder="Location" })
+
+   @Html.Label("Tour Image :")@Html.TextBoxFor(model => model.tours.picture, new { @placeholder="Pic", type="file", name = "file1" })
+
+    <input type ="submit" value ="add" />
+
+    }

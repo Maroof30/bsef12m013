@@ -1,0 +1,87 @@
+﻿@{
+    ViewBag.Title = "tours";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+  
+}
+
+
+<br />
+<br />
+<br />
+
+
+<div class ="row" >
+    <div class ="col-md-2">.</div>
+    <div class="col-md-8">
+
+    </div>
+
+
+     <div class ="col-md-1"></div>
+    </div>
+
+         <div style ="background-image:url('../cap.jpg')">
+                                    <br />
+<br />
+
+                 @model MvcApplication2.Models.modelview_classes.myModel
+           
+             @for( int i=0; i< Model.list.Count ;i++)
+             {
+               <div class="row">
+
+
+                   
+                   <div class ="col-md-1" style="background-color:transparent">.
+                   </div>
+                 
+                   
+                    
+                         <form action="/Booking/book">
+                   <div class="col-md-5" >
+                       <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="@Model.list[i].picture" alt="kkk.jpg" style ="height:230px; width:100%" />
+      <div class="cap.jpgtion" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">@Model.list[i].head</h3>
+        <p style="color:white;white-space:normal"><b>@Model.list[i].desc .Click to Book Now</b></p>
+          
+                       <input type="hidden" value="@Model.list[i].Id" name="h"  runat="server"  />
+         
+        <p  style=""><input type="submit" class="btn btn-success" role="button" value ="BOOK NOW"/></p>
+      </div>
+    </div>
+                   </div>
+ </form>
+                   
+                 @{i = i + 1;}
+
+                   @if ( i < Model.list.Count)
+                   {
+                         <form action="/Booking/book">
+                   <div class="col-md-5">
+
+                       <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="@Model.list[i].picture" alt="kkk.jpg"  style ="height:230px; width:100%" />
+      <div class="cap.jpgtion" style="background-image:url('../cap.jpg.jpg')">
+        <h3 style="color:orange">@Model.list[i].head</h3>
+        <p style="color:white;white-space:normal"><b>@Model.list[i].desc .Click to Book Now</b></p>
+              <input type="hidden" value="@Model.list[i].Id" name="h"  runat="server"  />
+        <p  style=""><input type="submit" class="btn btn-success" role="button" value="BOOK NOW" /> </p>
+      </div>
+    </div>
+                         
+             </div>      
+                             </form>
+                   }
+
+                   <div class ="col-md-1" style="background-color:transparent">.
+                   </div>
+               </div>
+             }
+
+
+          
+          
+
+
+        </div>

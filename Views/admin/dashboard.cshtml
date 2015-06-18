@@ -1,0 +1,79 @@
+﻿@{
+    ViewBag.Title = "home";
+    Layout = "~/Views/Shared/_AdminLayout.cshtml";
+    int jj = @Model.total - @Model.active;
+    int f = @Model.total - @Model.male;
+}
+
+@model MvcApplication2.Models.modelview_classes.myModel
+
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		
+		<script type="text/javascript">
+$(function () {
+    $('#container').highcharts({
+        chart: {
+            type: 'column'
+        },
+        title: {
+            text: 'Statistics of the Users'
+        },
+        subtitle: {
+            
+        },
+        xAxis: {
+            type: 'category',
+            labels: {
+                rotation: -45,
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        },
+        yAxis: {
+            min: 0,
+            title: {
+                text: 'No of Users'
+            }
+        },
+        legend: {
+            enabled: false
+        },
+        
+        series: [{
+            name: 'Users',
+            data: [
+                ['Total', @Model.total],
+                ['Active', @Model.active],
+                ['Inactive', @jj],
+                ['Male Users', @Model.male],
+                ['Female Users', @f]
+            ],
+            dataLabels: {
+                enabled: true,
+                rotation: -90,
+                color: '#FFFFFF',
+                align: 'right',
+                format: '{point.y:.1f}', // one decimal
+                y: 10, // 10 pixels down from the top
+                style: {
+                    fontSize: '13px',
+                    fontFamily: 'Verdana, sans-serif'
+                }
+            }
+        }]
+    });
+});
+		</script>
+
+
+
+
+<div id="container" style="min-width: 310px; height: 400px; margin: 0 auto"></div>
+
+
+
+
+
