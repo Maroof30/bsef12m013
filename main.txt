@@ -1,0 +1,173 @@
+@{
+    ViewBag.Title = "tours";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+<br />
+<br />
+<br />
+
+@model MvcApplication2.Models.tour
+<div class ="row">
+    <div class ="col-md-2">.</div>
+    <div class="col-md-8">
+<video  controls="controls" style ="border:groove;border-color:ghostwhite;border-width:5px;border-radius:1vw">
+
+    <source src ="../123.mp4" type ="video/mp4"/>
+    </video>
+    </div>
+
+
+     <div class ="col-md-1"></div>
+    </div>
+
+         <div style ="background-image:url('../cap.jpg')">
+      
+               <div class="row">
+                              <br />
+<br />
+
+
+                   
+                   <div class ="col-md-1" style="background-color:transparent">.
+                   </div>
+                 
+                   
+                    
+                         <form action="/Booking/book">
+                   <div class="col-md-5" >
+                       <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="@Model.picture" alt="kkk.jpg" style ="height:230px; width:100%" />
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+
+        <p  style=""><input type="submit" class="btn btn-success" role="button" id="@Model.Id"/>BOOK NOW </p>
+      </div>
+    </div>
+                       <input type="hidden" value="@Model.Id" name="h" />
+                   </div>
+ </form>
+                   
+                  
+
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../leo.jpg" alt="kkk.jpg"  style ="height:230px; width:100%" />
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+                   <div class ="col-md-1" style="background-color:transparent">.
+                   </div>
+               </div>
+
+
+
+               <div class="row">
+                   <div class ="col-md-1">.
+                   </div>
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../jeep.jpg" alt="kkk.jpg"  style ="height:230px; width:100%" />
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../a.jpg" alt="kkk.jpg"  style ="height:230px; width:100%" />
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+                   <div class ="col-md-1">3333
+                   </div>
+               </div>
+
+
+
+               <div class="row">
+                   <div class ="col-md-1">3333
+                   </div>
+
+                   <div class="col-md-5">
+                        <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../gramd.jpg" alt="kkk.jpg"  style ="height:230px; width:100%"/>
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../hik.jpg" alt="kkk.jpg"  style ="height:230px; width:100%"/>
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+                   <div class ="col-md-1">.
+                   </div>
+               </div>
+
+
+               <div class="row">
+                   <div class ="col-md-1">.
+                   </div>
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../bbq.jpg" alt="kkk.jpg"  style ="height:230px; width:100%"/>
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                         <div class="thumbnail" style="border:0vw; background-image:url('../cap.jpg')" >
+      <img src="../gir.jpg" alt="kkk.jpg"  style ="height:230px; width:100%"/>
+      <div class="caption" style="background-image:url('../cap.jpg')">
+        <h3 style="color:orange">8 HOUR ADVENTURE</h3>
+        <p style="color:white;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p  style=""><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+                   </div>
+
+                   <div class ="col-md-1">.
+                   </div>
+               </div>
+
+
+          
+
+
+        </div>

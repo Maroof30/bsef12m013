@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>Cheetah</title>
+        <script src="jquery-1.11.3.min.js"></script>
+    <link href="bootstrap.css" rel="stylesheet"/>
+    <script src="bootstrap.js"></script>
+
+
+
+    <style>
+      
+        .navbar.navbar-default {
+           
+           
+            z-index:1000;
+          background-color:transparent;
+          
+        
+           border-color:transparent;
+     
+        
+
+        }
+
+        .nav-tabs > li.active > a,
+        .nav-tabs > li.active > a:hover,
+        .nav-tabs > li.active > a:focus{
+            color: #555555;
+            background-color:greenyellow;
+        } 
+
+
+
+        .navbar-default .nav-tabs > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    background-color:orange;
+    color: #FFC0CB;
+   
+    border-color:transparent;
+}
+
+
+       .nav.nav-center {
+   
+       
+    float:none;
+}
+
+.nav.navbar-nav{
+    text-align:center;
+       
+}
+
+        myclass {
+          background-image:url('brown.jpg');
+          
+        }
+        
+    </style>
+
+
+
+
+  
+</head>
+<body style="background-image:url('kkk.jpg')">
+    <div class="container-fluid">
+    <div class="row">
+    <div class="col-md-8">111111111</div>
+  <div class="col-md-4">1111111111 </div>
+</div>
+<div class="row">
+  <div class="col-md-8"> 2222222222</div>
+  <div class="col-md-4">22222222222 </div>
+</div>
+
+
+
+
+    <div class="row">
+  <div class="col-md-8"> .</div>
+  <div class="col-md-4">. </div>
+</div>
+
+
+<div class="row">
+
+
+  <div class="col-md-2"> 33333333333</div>
+  <div class="col-md-9"> 
+        <img src="1.jpg" class="img-responsive" alt="Cinque Terre" />
+  </div>
+  <div class="col-md-1"> 33333333333</div>
+</div>
+<div class="row">
+
+
+  <div class="col-md-2"> 444444444</div>
+  <div class="col-md-9"> 
+      <div class="jumbotron" style="background-image:url('jeep3.jpg')">
+
+          <p style="font-style:italic;font-size:40px;color:white;margin-left:50px;margin-top:10px;font-family:Impact">UNLEASH YOUR</p> 
+              <p style="font-style:italic;font-size:40px;color:white;margin-left:50px;font-family:Impact">SPIRIT ADVENTURE</p> 
+        <a href="#" class="btn btn-success" role="button" style="margin-left :60px;width:150px;height:50px;font-style:italic;font-weight:bold;font-size:16px">RESERVE NOW</a>
+      
+
+
+          <nav class="navbar navbar-default" >
+  
+      <div class="navbar" >
+    <div class="navbar-inner">
+     <ul class="nav nav-tabs" role="tablist">
+        
+        
+           <li  class="active"><a data-toggle="tab" href="#home"><span class="glyphicon glyphicon-home"></span><b><label style ="color:white; font-size:1vw">Home</label></b></a></li>
+
+        <li><a data-toggle="tab" href="#tour"><b><label style ="color:floralwhite; font-size:1vw">Tours and Prices</label></b></a></li>
+        <li><a data-toggle="tab" href="#"><b><label style ="color:white; font-size:1vw">About Us</label></b></a></li> 
+        <li ><a data-toggle="tab" href="#"><b><label style ="color:white; font-size:1vw">Contact</label></b></a></li> 
+      </ul>
+    </div>
+          </div>
+  
+</nav>
+
+
+      </div>
+        
+
+
+
+     
+
+
+   
+  </div>
+  <div class="col-md-1">4444444444444 </div>
+</div>
+
+ 
+    <div class="row">
+  <div class="col-md-2"> 5555555555</div>
+  <div class="col-md-9">
+
+       
+  </div>
+        <div class="col-md-1">555555555555</div>
+
+</div>
+      <div class="tab-content">
+   
+
+          <div id="home" role="tabpanel" class="tab-pane active" >
+    <div class="row">
+  <div class="col-md-8"> 66666666</div>
+  <div class="col-md-4">66666666 </div>
+</div>
+
+  
+ <div class="row">
+  <div class="col-md-8"> 66666666</div>
+  <div class="col-md-4">66666666 </div>
+</div>
+     <div class="row">
+  <div class="col-md-8"> 66666666</div>
+  <div class="col-md-4">66666666 </div>
+</div>
+     <div class="row">
+  <div class="col-md-8"> 66666666</div>
+  <div class="col-md-4">66666666 </div>
+</div>
+     <div class="row">
+  <div class="col-md-8"> 66666666</div>
+  <div class="col-md-4">66666666 </div>
+</div>
+
+
+
+    <div class="row">
+  <div class="col-md-2"> 66666666</div>
+  <div class="col-md-9">
+        <img src="special.jpg" class="img-responsive" alt="Cinque Terre" />
+
+  
+  </div>
+        <div class="col-md-1"> 66666666</div>
+
+        
+
+</div>
+
+
+    
+
+  
+    
+
+
+   
+    
+        <div class="row">
+  <div class="col-md-2"> 66666666</div>
+  <div class="col-md-9" >
+      <img src="feat.jpg" class="img-responsive" alt="Cinque Terre" style="background-image:url('feat2.jpg')" /></div>
+<div class="col-md-1"> 66666666</div>
+</div>
+
+
+
+
+    <div class="row">
+     <div class="col-md-2"> 66666666</div>
+       
+
+
+        
+
+          <div class ="col-md-2">
+           
+ 
+    <div class="thumbnail" style="background-image:url('th.jpg');border-color:#291400; border:0px;border-image:url('aligator.jpg')">
+      <img src="jeep.jpg" alt="kkk.jpg" style="height:200px;width:350px"/>
+      <div class="caption" style="background-image:url('cap.jpg');width:209px">
+        <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+        <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+          <div class ="col-md-2">
+           
+ 
+    <div class="thumbnail" style="background-image:url('th.jpg');border-color:#291400; border:0px;border-image:url('aligator.jpg')">
+      <img src="a.jpg" alt="kkk.jpg" style="height:200px;width:350px"/>
+      <div class="caption" style="background-image:url('cap.jpg');width:209px">
+        <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+        <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+         <div class ="col-md-2">
+           
+ 
+    <div class="thumbnail" style="background-image:url('th.jpg');border-color:#291400; border:0px;border-image:url('aligator.jpg')">
+      <img src="leo.jpg" alt="kkk.jpg" style="height:200px;width:350px"/>
+      <div class="caption" style="background-image:url('cap.jpg');width:209px">
+        <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+        <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+           <div class ="col-md-2">
+           
+ 
+    <div class="thumbnail" style="background-image:url('th.jpg');border-color:#291400; border:0px;border-image:url('aligator.jpg')">
+      <img src="hik.jpg" alt="kkk.jpg" style="height:200px;width:350px"/>
+      <div class="caption" style="background-image:url('cap.jpg');width:209px">
+        <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+        <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+      </div>
+    </div>
+  </div>
+
+
+        <div class="col-md-2"> 66666666</div>
+    </div>
+          
+   
+    <div class="row">
+        <div class="col-md-12">
+         <nav class="navbar " style=" background-image:url('footer.jpg'); position:absolute; height:200px; width:1650px;border:0px">
+  <div class="container">
+   
+  </div>
+</nav>
+    </div>
+        </div>
+   </div>
+
+
+
+
+
+           <div id="tour" role="tabpanel" class="tab-pane" style="background-image:url('cap2.jpg')">
+               <div class="row">
+                   <div class ="col-md-1">3333
+                   </div>
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="tr.jpg" class="img-responsive" alt="Cinque Terre"  style="height:250px; width:1000px" />
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="leo.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+                   <div class ="col-md-1">3333
+                   </div>
+               </div>
+
+
+
+               <div class="row">
+                   <div class ="col-md-1">3333
+                   </div>
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="jeep.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="a.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+                   <div class ="col-md-1">3333
+                   </div>
+               </div>
+
+
+
+               <div class="row">
+                   <div class ="col-md-1">3333
+                   </div>
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="gramd.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="hik.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+                   <div class ="col-md-1">3333
+                   </div>
+               </div>
+
+
+               <div class="row">
+                   <div class ="col-md-1">3333
+                   </div>
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="bbq.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+
+                   <div class="col-md-5">
+                       <div class ="jumbotron"  style ="background-image:url('cap.jpg')">
+                           <img src="gir.jpg" class="img-responsive" alt="Cinque Terre" style="height:250px; width:1000px"/>
+                            <h3 style="color:orange;font-size:18px; font-weight:bold">8 HOUR ADVENTURE</h3>
+             <p style="color:white; font-size:14px;white-space:normal">Click on button for booking tour to amazon forest</p>
+        <p><a href="#" class="btn btn-success" role="button">BOOK NOW</a> </p>
+
+                       </div>
+                   </div>
+
+                   <div class ="col-md-1">3333
+                   </div>
+               </div>
+
+
+           </div>
+
+           <div class="row">
+        <div class="col-md-12">
+         <nav class="navbar " style=" background-image:url('footer.jpg'); position:absolute; height:200px; width:1650px;border:0px">
+  <div class="container">
+   
+  </div>
+</nav>
+    </div>
+        </div>
+
+    </div>
+
+</div>
+</body>
+</html>
